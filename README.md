@@ -12,7 +12,9 @@ Link to Ear (web): https://earweb.bttl.xyz
 > Arunavo Ray. The user interface of Nothing X Mac is based on his original work.
 Link to original repository: https://github.com/arunavo4/nothing-x-macos?ysclid=m7w2denfko175827967
 
-> eldandelion who's app I based from
+> eldandelion who's app I based from 
+link to original repository:
+https://github.com/eldandelion/nothing-x-macos
 
 
 ## UI Screenshots
