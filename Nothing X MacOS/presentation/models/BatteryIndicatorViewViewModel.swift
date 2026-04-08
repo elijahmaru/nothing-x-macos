@@ -79,9 +79,9 @@ class BatteryIndicatorViewViewModel : ObservableObject {
         
     
     
-    @Published var leftBattery: Int = 0;
-    @Published var rightBattery: Int = 0;
-    @Published var caseBattery: Int = 0;
+    @Published var leftBattery: Double = 0;
+    @Published var rightBattery: Double = 0;
+    @Published var caseBattery: Double = 0;
     @Published var isLeftCharging = false;
     @Published var isRightCharging = false;
     @Published var isCaseCharging = false;

@@ -30,13 +30,13 @@ class NothingDeviceFDTO: ObservableObject {
         didSet { notifyDataUpdated() }
     }
     
-    @Published var leftBattery: Int = 0 {
+    @Published var leftBattery: Double = 0.0 {
         didSet { notifyDataUpdated() }
     }
-    @Published var rightBattery: Int = 0 {
+    @Published var rightBattery: Double = 0.0 {
         didSet { notifyDataUpdated() }
     }
-    @Published var caseBattery: Int = 0 {
+    @Published var caseBattery: Double = 0.0 {
         didSet { notifyDataUpdated() }
     }
     

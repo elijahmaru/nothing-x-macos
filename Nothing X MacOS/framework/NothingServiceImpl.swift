@@ -496,7 +496,7 @@ class NothingServiceImpl : NothingService {
         for i in 0..<connectedDevices {
             let deviceId = hexString[9 + (i * 2)]
             let batteryData = hexString[10 + (i * 2)]
-            let batteryLevel = Int(batteryData & BATTERY_MASK)
+            let batteryLevel = Double(batteryData & BATTERY_MASK)
             let isCharging = (batteryData & RECHARGING_MASK) == RECHARGING_MASK
             
             switch deviceId {

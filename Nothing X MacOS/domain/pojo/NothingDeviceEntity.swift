@@ -15,9 +15,9 @@ class NothingDeviceEntity : Codable, ObservableObject {
     let sku: SKU
     let bluetoothDetails: BluetoothDeviceEntity
     
-    var leftBattery: Int
-    var rightBattery: Int
-    var caseBattery: Int
+    var leftBattery: Double
+    var rightBattery: Double
+    var caseBattery: Double
     
     var isLeftCharging: Bool
     var isRightCharging: Bool
@@ -39,7 +39,7 @@ class NothingDeviceEntity : Codable, ObservableObject {
     var tapAndHoldGestureActionLeft: TapAndHoldGestureActions
     var tapAndHoldGestureActionRight: TapAndHoldGestureActions
     
-    init(name: String, serial: String, codename: Codenames, firmware: String, sku: SKU, leftBattery: Int, rightBattery: Int, caseBattery: Int, isLeftCharging: Bool, isRightCharging: Bool, isCaseCharging: Bool, isLeftConnected: Bool, isRightConnected: Bool, isCaseConnected: Bool, anc: ANC, listeningMode: EQProfiles, isLowLatencyOn: Bool, isInEarDetectionOn: Bool, bluetoothDetails: BluetoothDeviceEntity, tripleTapGestureActionLeft: TripleTapGestureActions, tripleTapGestureActionRight: TripleTapGestureActions, tapAndHoldGestureActionLeft: TapAndHoldGestureActions, tapAndHoldGestureActionRight: TapAndHoldGestureActions) {
+    init(name: String, serial: String, codename: Codenames, firmware: String, sku: SKU, leftBattery: Double, rightBattery: Double, caseBattery: Double, isLeftCharging: Bool, isRightCharging: Bool, isCaseCharging: Bool, isLeftConnected: Bool, isRightConnected: Bool, isCaseConnected: Bool, anc: ANC, listeningMode: EQProfiles, isLowLatencyOn: Bool, isInEarDetectionOn: Bool, bluetoothDetails: BluetoothDeviceEntity, tripleTapGestureActionLeft: TripleTapGestureActions, tripleTapGestureActionRight: TripleTapGestureActions, tapAndHoldGestureActionLeft: TapAndHoldGestureActions, tapAndHoldGestureActionRight: TapAndHoldGestureActions) {
         self.name = name
         self.serial = serial
         self.codename = codename
