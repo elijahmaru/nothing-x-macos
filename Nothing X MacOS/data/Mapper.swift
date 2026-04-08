@@ -11,7 +11,7 @@ extension NothingDeviceDTO {
     func toEntity() -> NothingDeviceEntity {
         
         return NothingDeviceEntity(
-            name: self.name,
+            name: self.bluetoothDetails.name,
             serial: self.serial,
             codename: self.codename,
             firmware: self.firmware,

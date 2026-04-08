@@ -8,11 +8,12 @@
 import SwiftUI
 
 struct DeviceNameDotTextView: View {
+    @StateObject private var viewModel = MainViewViewModel(bluetoothService: BluetoothServiceImpl(), nothingRepository: NothingRepositoryImpl.shared, nothingService: NothingServiceImpl.shared)
     var body: some View {
         VStack {
             Spacer(minLength: 4)
-            //ear (1)
-            Text("ear (a)")
+            //name of the device
+            Text(viewModel.nothingDevice?.name ?? "ear (a)")
                 .font(.custom("5by7", size: 20)).foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
                 .rotationEffect(.degrees(-90))
                 .padding()
